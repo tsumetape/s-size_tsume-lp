@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>爪伸び育て～ぷ｜第2趾～第5趾の短くなった爪に</title>
+    <style>
+      :root {
+        --bg: #f5f2ea;
+        --paper: #fffdf8;
+        --ink: #33251d;
+        --sub: #6f5b4d;
+        --accent: #c86b32;
+        --accent2: #1f8c8f;
+        --line: #06c755;
+        --border: #eadbc9;
+        --soft: #fbf5ee;
+        --shadow: 0 14px 36px rgba(80, 55, 35, 0.1);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+          "Yu Gothic", Meiryo, "Noto Sans JP", sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.85;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: #2c2925;
+        color: #fff;
+        text-align: center;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        padding: 9px 12px;
+      }
+      .page {
+        max-width: 1080px;
+        margin: 0 auto;
+        background: var(--paper);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+      }
+      .section {
+        padding: 58px 22px;
+      }
+      .section.alt {
+        background: var(--soft);
+      }
+      .inner {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .sec-head {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      .label {
+        display: inline-block;
+        background: #f0e0cf;
+        color: var(--accent);
+        font-weight: 900;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        border-radius: 999px;
+        padding: 4px 14px;
+        margin-bottom: 10px;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+      h1 {
+        font-size: clamp(27px, 5.4vw, 46px);
+        line-height: 1.35;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+      }
+      h2 {
+        font-size: clamp(23px, 4.3vw, 34px);
+        line-height: 1.45;
+        font-weight: 900;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.5;
+      }
+      .lead {
+        font-size: clamp(15px, 2.7vw, 18px);
+        color: var(--sub);
+        margin-top: 14px;
+      }
+      .note {
+        font-size: 12px;
+        color: #7c6a5f;
+        line-height: 1.7;
+      }
+      .hero {
+        padding: 0;
+        background: #ddd8cf;
+      }
+      .hero-img {
+        width: 100%;
+        height: auto;
+      }
+      .hero-copy {
+        padding: 38px 22px 46px;
+        background: linear-gradient(180deg, #fffdfa, #fff4e8);
+      }
+      .hero-copy .inner {
+        max-width: 820px;
+        text-align: center;
+      }
+      .hero-text {
+        margin: 20px auto 0;
+        max-width: 720px;
+        text-align: left;
+        color: #4f4037;
+        font-size: 16px;
+        line-height: 2;
+      }
+      .btns {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 250px;
+        border-radius: 999px;
+        padding: 15px 22px;
+        font-weight: 900;
+        color: #fff;
+        background: linear-gradient(135deg, #e37a41, #c86b32);
+        box-shadow: 0 10px 24px rgba(200, 107, 50, 0.25);
+      }
+      .btn.line {
+        background: linear-gradient(135deg, #06c755, #0aa44a);
+        box-shadow: 0 10px 24px rgba(6, 199, 85, 0.25);
+      }
+      .btn.outline {
+        background: #fff;
+        color: var(--accent);
+        border: 2px solid var(--accent);
+        box-shadow: none;
+      }
+      .img-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        margin: 22px auto 0;
+      }
+      .img-card img {
+        width: 100%;
+        height: auto;
+      }
+      .text-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 22px 20px;
+        box-shadow: 0 8px 24px rgba(80, 55, 35, 0.06);
+        margin-top: 18px;
+      }
+      .checks {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+        padding: 0;
+        list-style: none;
+      }
+      .checks li {
+        background: #fff;
+        border: 1px solid #eee3d5;
+        border-radius: 12px;
+        padding: 12px 14px 12px 42px;
+        position: relative;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .checks li:before {
+        content: "✓";
+        position: absolute;
+        left: 15px;
+        top: 11px;
+        color: var(--accent);
+        font-weight: 900;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 24px;
+        align-items: center;
+      }
+      .kicker {
+        color: var(--accent);
+        font-weight: 900;
+        margin-bottom: 8px;
+      }
+      .warning {
+        background: #fff8ed;
+        border-left: 5px solid var(--accent);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin-top: 18px;
+        font-weight: 800;
+        line-height: 1.8;
+      }
+      .faq {
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      .faq-item {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        box-shadow: 0 8px 22px rgba(80, 55, 35, 0.05);
+      }
+      .faq-q {
+        font-weight: 900;
+        padding: 17px 18px 14px 54px;
+        position: relative;
+        line-height: 1.65;
+      }
+      .faq-q:before {
+        content: "Q";
+        position: absolute;
+        left: 18px;
+        top: 18px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: #e9b37b;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 14px;
+      }
+      .faq-a {
+        padding: 0 18px 18px 54px;
+        color: #5b4b42;
+        font-size: 15px;
+      }
+      .faq-a:before {
+        content: "A.";
+        font-weight: 900;
+        color: #888;
+        margin-right: 0.25em;
+      }
+      .line-wrap {
+        background: linear-gradient(135deg, #eef9f1, #fefdf8);
+      }
+      .line-layout {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 22px;
+        align-items: center;
+      }
+      .qr-box {
+        background: #fff;
+        border: 2px dashed #83d6a3;
+        border-radius: 18px;
+        padding: 22px;
+        text-align: center;
+        box-shadow: var(--shadow);
+      }
+      .qr-placeholder {
+        width: 168px;
+        height: 168px;
+        border-radius: 12px;
+        border: 3px solid #d2ead9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 12px;
+        color: #6f9f7b;
+        font-weight: 900;
+        background: #fafefa;
+      }
+      .badges {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 14px;
+      }
+      .badge {
+        border: 1px solid var(--border);
+        background: #fff;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 800;
+        color: #6b584c;
+      }
+      .dark {
+        background: #25211e;
+        color: #fff;
+        text-align: center;
+      }
+      .dark .lead {
+        color: #ddd;
+      }
+      .coupon-mini {
+        display: inline-block;
+        border: 2px dashed #efb06f;
+        border-radius: 14px;
+        padding: 14px 20px;
+        margin: 24px auto 0;
+        background: rgba(255, 255, 255, 0.08);
+        font-weight: 900;
+        color: #fff;
+      }
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #77685f;
+        padding: 34px 18px;
+        background: #efebe3;
+      }
+      @media (max-width: 760px) {
+        .section {
+          padding: 44px 16px;
+        }
+        .two-col,
+        .line-layout {
+          grid-template-columns: 1fr;
+        }
+        .hero-copy {
+          padding: 30px 18px 38px;
+        }
+        .btn {
+          width: 100%;
+          min-width: 0;
+        }
+        .img-card {
+          border-radius: 14px;
+        }
+        .faq-q {
+          padding-left: 50px;
+        }
+        .faq-a {
+          padding-left: 18px;
+        }
+        .qr-placeholder {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      LINEお友だち登録で100円OFFクーポン ＋ LP限定10%OFF（小サイズ）
+    </div>
+    <main class="page">
+      <section class="hero" id="top">
+        <img
+          class="hero-img"
+          src="01_fv.png"
+          alt="爪が剥がれた後の指に貼るだけ 爪伸び育て～ぷ"
+        />
+        <div class="hero-copy">
+          <div class="inner">
+            <span class="label">第2趾〜第5趾の短くなった爪に</span>
+            <h1>
+              深爪・爪剥がれ後の小さな爪を、<br />貼るだけでやさしくサポート。
+            </h1>
+            <p class="hero-text">
+              爪伸び育て～ぷは、短くなった足の爪まわりの皮膚をそっと下げ、爪が前へ伸びていきやすい環境づくりをサポートするセルフケア用テープです。爪伸び育て～ぷ（小サイズ）は第2趾〜第5趾など、小さな爪に合わせたケアを想定しています。
+            </p>
+            <div class="btns">
+              <a class="btn" href="#line">10%OFFクーポンを受け取る</a>
+              <a class="btn outline" href="#faq">購入前のFAQを見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="problem">
+        <div class="inner">
+          <div class="sec-head">
+            <span class="label">PROBLEM</span>
+            <h2>その小指、気になっていませんか？</h2>
+            <p class="lead">
+              見えにくい場所だからこそ、気づいた時には短くなっていることがあります。
+            </p>
+          </div>
+          <div class="img-card">
+            <img src="02_problem.png" alt="その小指、気になっていませんか" />
+          </div>
+          <ul class="checks">
+            <li>靴やサンダルに第2趾〜第5趾の爪が当たってトラブルが多い</li>
+            <li>深爪や爪剥がれ後、爪が短いまま気になる</li>
+            <li>普通の絆創膏やテープでは対処が困難</li>
+            <li>病院に行くほどではないけれど、何かケアしたい</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="leave">
+        <div class="inner two-col">
+          <div>
+            <span class="label">LEAVE IT</span>
+            <h2>そのままにすると、<br />爪が伸びる道が狭くなることも。</h2>
+            <p class="lead">
+              短くなった爪の先に皮膚が盛り上がると、爪が前へ伸びにくくなります。
+            </p>
+            <div class="warning">
+              だから、気づいたタイミングで早めに「伸びる環境」を整えることが大切です。
+            </div>
+          </div>
+          <div class="img-card">
+            <img src="03_leave.png" alt="そのままにするとこうなります" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="mechanism">
+        <div class="inner">
+          <div class="sec-head">
+            <span class="label">MECHANISM</span>
+            <h2>短くなった爪が伸びにくく感じる仕組み</h2>
+            <p class="lead">
+              皮膚の盛り上がりと爪の進行方向を、イメージで整理します。
+            </p>
+          </div>
+          <div class="img-card">
+            <img
+              src="04_mechanism.png"
+              alt="皮膚が隆起し爪が上方へ重なる仕組み"
+            />
+          </div>
+          <p class="text-card">
+            爪伸び育て～ぷは、皮膚を下げた状態をテープでサポートし、短くなった爪の先にスペースをつくる発想の商品です。無理に矯正するものではなく、日常の中で使いやすいセルフケアを目指しています。
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="worse">
+        <div class="inner two-col">
+          <div class="img-card">
+            <img src="05_check.png" alt="この状態、当てはまりませんか" />
+          </div>
+          <div>
+            <span class="label">CHECK</span>
+            <h2>この状態、当てはまりませんか？</h2>
+            <p class="lead">
+              深爪、内出血後、爪剥がれ後など、短くなった爪には早い段階のケアが役立つ場合があります。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="solution">
+        <div class="inner two-col">
+          <div>
+            <span class="label">SOLUTION</span>
+            <h2>皮膚を下げて、<br />爪が前へ伸びるスペースを。</h2>
+            <p class="lead">
+              短くなった爪が皮膚に埋もれないよう、周囲の皮膚を下げるという考え方です。
+            </p>
+            <div class="warning">
+              貼るだけで、日常生活の中でケアを続けやすい設計です。
+            </div>
+          </div>
+          <div class="img-card">
+            <img src="06_solution.png" alt="皮膚を下げて前へ伸びるイメージ" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="howto">
+        <div class="inner">
+          <div class="sec-head">
+            <span class="label">HOW TO USE</span>
+            <h2>使い方は、貼るだけ簡単</h2>
+            <p class="lead">
+              第2趾〜第5趾の短い爪まわりに、爪伸び育て～ぷを貼ってサポートします。
+            </p>
+          </div>
+          <div class="img-card">
+            <img
+              src="07_howto.png"
+              alt="爪伸び育て～ぷの使用方法 貼るだけ簡単"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="scene">
+        <div class="inner">
+          <div class="sec-head">
+            <span class="label">SCENE</span>
+            <h2>こんなシーンで、短くなった爪に</h2>
+            <p class="lead">
+              サンダル・パンプス・スポーツ後など、日常の中で気になる小さな爪に。
+            </p>
+          </div>
+          <div class="img-card">
+            <img src="08_scene.png" alt="使用シーン 4コマイラスト" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="inner faq">
+          <div class="sec-head">
+            <span class="label">FAQ</span>
+            <h2>購入前によくある質問</h2>
+            <p class="lead">
+              ご購入前に迷いやすいポイントだけを、短くまとめました。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">どのような爪に使用できますか？</p>
+            <p class="faq-a">
+              深爪や内出血後に爪が剥がれて短くなった足の爪の保護にご使用いただけます。抗がん剤などの薬の副作用により爪が脱落して短くなった場合にもご利用いただけます。<br /><br />※グラグラしている爪や脱落前の爪には使用できません。爪が脱落した後にご使用ください。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">靴を履いても大丈夫ですか？</p>
+            <p class="faq-a">
+              貼ったまま靴を履くことは可能です。ただし、爪のトラブルが生じた原因となる靴、例えば、つま先の細い靴やハイヒールや大きすぎる靴は爪先への負担が大きくなるため、できるだけ避けることをおすすめします。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">テープを貼ったまま運動はできますか？</p>
+            <p class="faq-a">
+              可能です。貼る時にしっかりと密着させてください。また、素足で行うスポーツの場合などに剥がれにくくする方法も別途ご案内しております。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">巻き爪にも使えますか？</p>
+            <p class="faq-a">
+              巻き爪の際の応急的な爪の食い込み緩和対策としてご利用いただけます。ただし、本品に巻き爪を矯正する効果はありません。
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">どのくらいの期間使用しますか？</p>
+            <p class="faq-a">
+              足の爪は通常、1か月に約1.5mm伸びると言われています。爪の状態に合わせて継続してご使用ください。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="features">
+        <div class="inner">
+          <div class="sec-head">
+            <span class="label">FEATURES</span>
+            <h2>この商品が叶える5つのハッピー</h2>
+            <p class="lead">
+              貼りやすさ・生活のしやすさ・安心感をまとめました。
+            </p>
+          </div>
+          <div class="img-card">
+            <img src="09_features.png" alt="この商品が叶える5つのハッピー" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section line-wrap" id="line">
+        <div class="inner line-layout">
+          <div class="img-card" style="margin-top: 0">
+            <img
+              src="10_line.png"
+              alt="LINEお友だち登録 10%OFFクーポンプレゼント 小サイズのみ対象"
+            />
+          </div>
+          <div class="qr-box">
+            <span class="label" style="background: #d9f3e1; color: #06a844"
+              >LINE FRIEND</span
+            >
+            <h2>
+              LINEお友だち登録で<br />
+              100円OFFクーポンプレゼント
+            </h2>
+
+            <p class="lead">
+              さらにLP限定特典として
+              小サイズ専用の10%OFFクーポンをご利用いただけます。
+            </p>
+
+            <div
+              style="
+                margin: 20px auto;
+                padding: 20px;
+                max-width: 320px;
+                background: #fff8ed;
+                border: 2px dashed #e4a75c;
+                border-radius: 12px;
+                text-align: center;
+              "
+            >
+              <div
+                style="
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: #666;
+                  margin-bottom: 8px;
+                "
+              >
+                LP限定特典
+              </div>
+
+              <div
+                style="
+                  font-size: 36px;
+                  font-weight: bold;
+                  letter-spacing: 2px;
+                  color: #d46b08;
+                  margin: 10px 0;
+                "
+              >
+                LP10OFF
+              </div>
+
+              <div style="font-size: 14px; line-height: 1.8; color: #666">
+                小サイズ限定10%OFF
+              </div>
+            </div>
+
+            <p class="note">
+              ※小サイズのみ対象<br />
+              ※お一人様1回限り<br />
+              ※他の割引との併用不可
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="order">
+        <div class="inner">
+          <span class="label" style="background: #403833; color: #f2c18d"
+            >LAST STEP</span
+          >
+          <h2>短くなった爪の不安に、<br />今日からできるセルフケア。</h2>
+          <p class="lead">
+            第2趾〜第5趾の短くなった爪に。まずは小サイズからお試しください。
+          </p>
+          <div class="coupon-mini">LINE登録特典：小サイズ10%OFF</div>
+          <div class="btns">
+            <a
+              class="btn"
+              href="https://shop.hibari-seisou.tokyo/collections/all"
+              >公式ショップで商品を見る</a
+            >
+            <a class="btn line" href="https://lin.ee/z4RP7J4"
+              >LINEでクーポンを受け取る</a
+            >
+          </div>
+          <p class="note" style="color: #d7ccc2; margin-top: 18px">
+            本品は医薬品ではありません。炎症・強い痛み・出血などがある場合は医療機関へご相談ください。
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <strong>爪伸び育て～ぷ</strong><br />
+      一般医療機器のセルフケア用テープです。症状の改善・治療を保証するものではありません。<br />
+      © 爪伸び育て～ぷ 公式
+    </footer>
+  </body>
+</html>
